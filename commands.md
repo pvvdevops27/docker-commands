@@ -21,4 +21,14 @@ docker build -t {nombre de la imagen}
 
 ## Construir imagen de docker de una imagen exponiendo por un puerto dado
 
+docker run -d -p {port}:{port} {imagen}
 
+## Subir una imagen a docker hub
+
+docker tag {nombre de la imagen} {username cuenta docker hub}/{nombre de la imagen}
+
+docker push {username cuenta docker hub}/{nombre de la imagen}
+
+## Bajar imagen del repositorio de docker hub
+
+docker pull {username cuenta docker hub}/{nombre de la imagen}
